@@ -22,7 +22,11 @@
 <meta property="og:site_name" content="罗朝福的博客">
 <meta property="og:description" content="UIDatePicker控件是iOS中用来给用户输入时间的一个控件，因为初学，所以此篇文章只当做是学习路上的心得记录，如有误，请指出。首先需要实例化一个时间控件1234//实例化一个时间控件UIDatePicker *date=[[UIDatePicker alloc]initWithFrame:CGRectMake(50, 520, 280, 100)];//将控件加到主窗体上去[self.wi">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2154466-d1a0559d2ca37a10.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2016-08-19T14:58:16.045Z">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2154466-8846f75fc75abff1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2154466-eb66fa1d09e027b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2154466-bffa5a93f27ffa2e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2154466-cff5b84fe3e5893e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2016-08-19T15:48:57.594Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS学习之UIDatePicker控件">
 <meta name="twitter:description" content="UIDatePicker控件是iOS中用来给用户输入时间的一个控件，因为初学，所以此篇文章只当做是学习路上的心得记录，如有误，请指出。首先需要实例化一个时间控件1234//实例化一个时间控件UIDatePicker *date=[[UIDatePicker alloc]initWithFrame:CGRectMake(50, 520, 280, 100)];//将控件加到主窗体上去[self.wi">
@@ -320,16 +324,17 @@
           
         <p>UIDatePicker控件是iOS中用来给用户输入时间的一个控件，因为初学，所以此篇文章只当做是学习路上的心得记录，如有误，请指出。<br>首先需要实例化一个时间控件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">//实例化一个时间控件</div><div class="line">UIDatePicker *date=[[UIDatePicker alloc]initWithFrame:CGRectMake(50, 520, 280, 100)];</div><div class="line">//将控件加到主窗体上去</div><div class="line">[self.window addSubview:date];</div></pre></td></tr></table></figure></p>
 <p>实例化后的控件初始状态如图所示</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/2154466-d1a0559d2ca37a10.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="@初始化的UIDatePicker控件"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2154466-d1a0559d2ca37a10.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="初始化的UIDatePicker控件"></p>
 <p>但是目前此控件是英文，所以接下来我们要考虑如何将其变为我们China的语言，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">date.locale=[NSLocale localeWithLocaleIdentifier:@&quot;zh-Hans&quot;];//设置显示的语言为中文</div></pre></td></tr></table></figure></p>
-<a id="more"></a>
 <p>上面一句代码就是将我们的控件语言设置为汉语所显示，当然你也可以设置为其他语言，韩语、日语都是可以的，此处不细讲。且看图：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2154466-8846f75fc75abff1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="设置了语言后控件"></p>
 <p>设置了语言后的控件，讲到这里你以为完了么？那你也想的太简单了。</p>
 <p>既然有输入时间，那肯定有输出时间。讲到输出时间就一定少不了我们iOS里面的时间格式化。且看图：</p>
-<p>控件初始化未格式化的时间</p>
-<p>格式化后的时间</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2154466-eb66fa1d09e027b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="控件初始化未格式化的时间"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2154466-bffa5a93f27ffa2e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="格式化后的时间"></p>
 <p>那么现在就来看看iOS的时间格式化代码又是怎么实现的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">NSDateFormatter *df=[[NSDateFormatter alloc]init];</div><div class="line">[df setDateFormat:@&quot;yyyy-MM-dd HH:mm:ss&quot;];//日期格式化的处理</div><div class="line">NSLog(@&quot;格式化后的时间为：%@&quot;,[df stringFromDate:date.date]);</div></pre></td></tr></table></figure></p>
 <p>输出：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2154466-cff5b84fe3e5893e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="格式化输出"></p>
 <p>格式化输出</p>
 <p>当然你也可以随心定制自己需要的各种显示格式，就是这么方便。</p>
 <p>这是学习iOS的第一篇博客文章，希望以后能继续坚持的写下去，加油。</p>
@@ -344,7 +349,7 @@
         <p><span>本文标题:</span><a href="/2016/08/19/iOS学习之UIDatePicker控件/">iOS学习之UIDatePicker控件</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">罗朝福</a></p>
         <p><span>发布时间:</span>2016-08-19, 15:57:52</p>
-        <p><span>最后更新:</span>2016-08-19, 22:58:16</p>
+        <p><span>最后更新:</span>2016-08-19, 23:48:57</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/08/19/iOS学习之UIDatePicker控件/" title="iOS学习之UIDatePicker控件">http://blog.lzhaofu.cn/2016/08/19/iOS学习之UIDatePicker控件/</a>
             <span class="copy-path" data-clipboard-text="原文: http://blog.lzhaofu.cn/2016/08/19/iOS学习之UIDatePicker控件/　　作者: 罗朝福" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
