@@ -10,5 +10,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://luozhaofu.github.io/sitemap.xml
-Sitemap: http://luozhaofu.github.io/baidusitemap.xml
+Sitemap: http://blog.lzhaofu.cn/sitemap.xml
+Sitemap: http://blog.lzhaofu.cn/baidusitemap.xml
