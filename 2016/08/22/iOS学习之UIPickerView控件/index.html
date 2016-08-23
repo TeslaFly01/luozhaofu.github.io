@@ -25,14 +25,14 @@
 <meta property="og:description" content="UIPickerView是iOS中用来提供给用户选择的一个控件，就如平常我们经常看到很多APP需要我们填写地址时需要输入的省份、城市、地区，都是用的此控件来实现的。
 
 下面就来看看要想在界面上显示一个UIPickerView控件该如何做？123456789//实例化一个选择器  UIPickerView *picker=[[UIPickerView alloc]initWithFrame:CGRe">
-<meta property="og:image" content="http://ocan7eeku.bkt.clouddn.com/160823083315178">
-<meta property="og:updated_time" content="2016-08-23T00:33:38.688Z">
+<meta property="og:image" content="http://image.lzhaofu.cn/160823083315178">
+<meta property="og:updated_time" content="2016-08-23T05:15:17.192Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS学习之UIPickerView控件">
 <meta name="twitter:description" content="UIPickerView是iOS中用来提供给用户选择的一个控件，就如平常我们经常看到很多APP需要我们填写地址时需要输入的省份、城市、地区，都是用的此控件来实现的。
 
 下面就来看看要想在界面上显示一个UIPickerView控件该如何做？123456789//实例化一个选择器  UIPickerView *picker=[[UIPickerView alloc]initWithFrame:CGRe">
-<meta name="twitter:image" content="http://ocan7eeku.bkt.clouddn.com/160823083315178">
+<meta name="twitter:image" content="http://image.lzhaofu.cn/160823083315178">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -325,7 +325,7 @@
       
           
         <p>UIPickerView是iOS中用来提供给用户选择的一个控件，就如平常我们经常看到很多APP需要我们填写地址时需要输入的省份、城市、地区，都是用的此控件来实现的。</p>
-<p><img src="http://ocan7eeku.bkt.clouddn.com/160823083315178" alt="UIPickerView控件"></p>
+<p><img src="http://image.lzhaofu.cn/160823083315178" alt="UIPickerView控件"></p>
 <p>下面就来看看要想在界面上显示一个UIPickerView控件该如何做？<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">//实例化一个选择器</div><div class="line">  UIPickerView *picker=[[UIPickerView alloc]initWithFrame:CGRectMake(50, 40, 320, 200)];</div><div class="line">  picker.delegate=self;</div><div class="line">  picker.backgroundColor=[UIColor orangeColor];</div><div class="line">  //设置初始化选中的行和列</div><div class="line">  [picker selectRow:1 inComponent:0 animated:YES];</div><div class="line">  [picker selectRow:1 inComponent:1 animated:YES];</div><div class="line">  [picker selectRow:3 inComponent:2 animated:YES];</div><div class="line">  [self.window addSubview:picker];</div></pre></td></tr></table></figure></p>
 <a id="more"></a>
 <p>控件显示出来了，那么就要去绑定数据。在我们绑定数据之前必须先在.h文件在继承2个协议：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//实现2个协议</div><div class="line">@interface AppDelegate : UIResponder &lt;UIApplicationDelegate,UIPickerViewDataSource,UIPickerViewDelegate&gt;</div></pre></td></tr></table></figure></p>
@@ -348,7 +348,7 @@
         <p><span>本文标题:</span><a href="/2016/08/22/iOS学习之UIPickerView控件/">iOS学习之UIPickerView控件</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">罗朝福</a></p>
         <p><span>发布时间:</span>2016-08-22, 22:46:21</p>
-        <p><span>最后更新:</span>2016-08-23, 08:33:38</p>
+        <p><span>最后更新:</span>2016-08-23, 13:15:17</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/08/22/iOS学习之UIPickerView控件/" title="iOS学习之UIPickerView控件">http://blog.lzhaofu.cn/2016/08/22/iOS学习之UIPickerView控件/</a>
             <span class="copy-path" data-clipboard-text="原文: http://blog.lzhaofu.cn/2016/08/22/iOS学习之UIPickerView控件/　　作者: 罗朝福" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
