@@ -15,22 +15,24 @@
 
 
 
-<meta name="description" content="最近一直忙于工作和iOS的学习，晚上都是忙到两点钟才上床睡觉，吃饭也是直接买了打包回家趴在电脑前面吃，但依旧感觉时间不够用。
-有时候晚上躺在床上回过头想想，发现今天其实也没干成什么，我们的时间都跑哪儿去了。我相信也有很多朋友和我有同样的感受，一直在忙，却又没忙出效果来。
-其实这就是一个效率的问题，当我们做一件事的时候，很容易受到外界因素的干扰，比如，今晚我想写篇千字文的文章，突然朋友来一条微信消息">
+<meta name="description" content="UIPickerView是iOS中用来提供给用户选择的一个控件，就如平常我们经常看到很多APP需要我们填写地址时需要输入的省份、城市、地区，都是用的此控件来实现的。
+
+下面就来看看要想在界面上显示一个UIPickerView控件该如何做？123456789//实例化一个选择器  UIPickerView *picker=[[UIPickerView alloc]initWithFrame:CGRe">
 <meta property="og:type" content="article">
-<meta property="og:title" content="谈谈时间管理和高效工作法">
-<meta property="og:url" content="http://blog.lzhaofu.cn/2016/08/21/谈谈时间管理和高效工作法/index.html">
+<meta property="og:title" content="iOS学习之UIPickerView控件">
+<meta property="og:url" content="http://blog.lzhaofu.cn/2016/08/22/iOS学习之UIPickerView控件/index.html">
 <meta property="og:site_name" content="罗朝福的博客">
-<meta property="og:description" content="最近一直忙于工作和iOS的学习，晚上都是忙到两点钟才上床睡觉，吃饭也是直接买了打包回家趴在电脑前面吃，但依旧感觉时间不够用。
-有时候晚上躺在床上回过头想想，发现今天其实也没干成什么，我们的时间都跑哪儿去了。我相信也有很多朋友和我有同样的感受，一直在忙，却又没忙出效果来。
-其实这就是一个效率的问题，当我们做一件事的时候，很容易受到外界因素的干扰，比如，今晚我想写篇千字文的文章，突然朋友来一条微信消息">
-<meta property="og:updated_time" content="2016-08-22T05:59:24.964Z">
+<meta property="og:description" content="UIPickerView是iOS中用来提供给用户选择的一个控件，就如平常我们经常看到很多APP需要我们填写地址时需要输入的省份、城市、地区，都是用的此控件来实现的。
+
+下面就来看看要想在界面上显示一个UIPickerView控件该如何做？123456789//实例化一个选择器  UIPickerView *picker=[[UIPickerView alloc]initWithFrame:CGRe">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2154466-d74b79b44d09d060.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2016-08-22T15:20:44.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="谈谈时间管理和高效工作法">
-<meta name="twitter:description" content="最近一直忙于工作和iOS的学习，晚上都是忙到两点钟才上床睡觉，吃饭也是直接买了打包回家趴在电脑前面吃，但依旧感觉时间不够用。
-有时候晚上躺在床上回过头想想，发现今天其实也没干成什么，我们的时间都跑哪儿去了。我相信也有很多朋友和我有同样的感受，一直在忙，却又没忙出效果来。
-其实这就是一个效率的问题，当我们做一件事的时候，很容易受到外界因素的干扰，比如，今晚我想写篇千字文的文章，突然朋友来一条微信消息">
+<meta name="twitter:title" content="iOS学习之UIPickerView控件">
+<meta name="twitter:description" content="UIPickerView是iOS中用来提供给用户选择的一个控件，就如平常我们经常看到很多APP需要我们填写地址时需要输入的省份、城市、地区，都是用的此控件来实现的。
+
+下面就来看看要想在界面上显示一个UIPickerView控件该如何做？123456789//实例化一个选择器  UIPickerView *picker=[[UIPickerView alloc]initWithFrame:CGRe">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/2154466-d74b79b44d09d060.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -62,7 +64,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>谈谈时间管理和高效工作法 | 罗朝福的博客</title>
+<title>iOS学习之UIPickerView控件 | 罗朝福的博客</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -278,11 +280,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-谈谈时间管理和高效工作法" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-iOS学习之UIPickerView控件" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/08/21/谈谈时间管理和高效工作法/" class="article-date">
-      <time datetime="2016-08-21T10:59:20.000Z" itemprop="datePublished">2016-08-21</time>
+      <a href="/2016/08/22/iOS学习之UIPickerView控件/" class="article-date">
+      <time datetime="2016-08-22T14:46:21.000Z" itemprop="datePublished">2016-08-22</time>
 </a>
 
 
@@ -297,7 +299,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      谈谈时间管理和高效工作法
+      iOS学习之UIPickerView控件
     </h1>
   
 
@@ -306,13 +308,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/学习心得/">学习心得</a>
+    <a class="article-category-link" href="/categories/学习笔记/">学习笔记</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/时间管理/">时间管理</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发/">开发</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/控件/">控件</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -322,26 +324,19 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>最近一直忙于工作和iOS的学习，晚上都是忙到两点钟才上床睡觉，吃饭也是直接买了打包回家趴在电脑前面吃，但依旧感觉时间不够用。</p>
-<p>有时候晚上躺在床上回过头想想，发现今天其实也没干成什么，我们的时间都跑哪儿去了。我相信也有很多朋友和我有同样的感受，一直在忙，却又没忙出效果来。</p>
-<p>其实这就是一个效率的问题，当我们做一件事的时候，很容易受到外界因素的干扰，比如，今晚我想写篇千字文的文章，突然朋友来一条微信消息邀我明天出去聚聚，就不得不停下手头的事。有人会说，你不看不就行了。你倒说得简单，现在手机的毒已经比鸦片还深，很难静下心来做一件事。</p>
-<p>上面说了那么多，其实就是一个方法和效率的问题，这就要谈到咋们今天要说的主题了：时间管理。时间管理，就是将我们的时间高效合理的利用起来，在有限的时间里做出高效的事。</p>
-<p>前段时间在知乎上也看了一些朋友关于这方面的讨论，说的最多的是番茄工作法。</p>
-<p>什么是番茄工作法？该如何运用？</p>
-<blockquote>
-<p>简单来说，就是把工作时间划分为多个番茄时间，一个番茄时间包含两个部分：25分钟的工作学习和5分钟的休息。</p>
-</blockquote>
-<p>PS：番茄工作法的时间并不是一定要25分钟的，每个人可以根据自己的情况来调节。</p>
+        <p>UIPickerView是iOS中用来提供给用户选择的一个控件，就如平常我们经常看到很多APP需要我们填写地址时需要输入的省份、城市、地区，都是用的此控件来实现的。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2154466-d74b79b44d09d060.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="UIPickerView控件"></p>
+<p>下面就来看看要想在界面上显示一个UIPickerView控件该如何做？<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">//实例化一个选择器</div><div class="line">  UIPickerView *picker=[[UIPickerView alloc]initWithFrame:CGRectMake(50, 40, 320, 200)];</div><div class="line">  picker.delegate=self;</div><div class="line">  picker.backgroundColor=[UIColor orangeColor];</div><div class="line">  //设置初始化选中的行和列</div><div class="line">  [picker selectRow:1 inComponent:0 animated:YES];</div><div class="line">  [picker selectRow:1 inComponent:1 animated:YES];</div><div class="line">  [picker selectRow:3 inComponent:2 animated:YES];</div><div class="line">  [self.window addSubview:picker];</div></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<p>要想达到高效工作的目的，就要严格按照番茄工作法的规则去执行，在工作和学习的25分钟之内只专注于工作和学习，不干其他的事包括喝茶、接电话、上洗手间；把这些事都留到休息的5分钟去做。番茄工作法就是通过这样一种简单直接的方式将很多根本不懂得如何管理自己的人领进了这个自我管理的大门。</p>
-<p>关于番茄工作法今天就 不过多的讲了，网上有很多相关的信息可供查阅，再或者你也可以去买一本《番茄工作图解法》去读一读。</p>
-<p>最后给各位推荐一些高效工作和学习的相关软件：</p>
-<p><strong>印象笔记：</strong>知识收集，整理；体验过的用户才知道</p>
-<p> <strong>爱今天：</strong>内置番茄工作钟，可以记录你每一天的时间都花哪儿去了。</p>
-<p> <strong>种子习惯：</strong>专家说一个好习惯的养成需要23天，内置上百万钟习惯养成，好习惯造就好人生，你值得拥有的一款软件。</p>
-<p> <strong>简书：</strong>喜欢它不仅因为他的界面简洁大气，而且里面还有很多高价值、可读的文章，</p>
-<p> <strong>知乎：</strong>知之为知之，不知为不知，各种知识大杂烩，我们的学习不因只关注某一领域，在知乎上可以学到其他行业的领域知识，大牛聚集地。</p>
-<p> <strong>思维导图：</strong>一款帮助我们将知识转化为图形的结构的软件，有助于记忆和理解</p>
+<p>控件显示出来了，那么就要去绑定数据。在我们绑定数据之前必须先在.h文件在继承2个协议：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//实现2个协议</div><div class="line">@interface AppDelegate : UIResponder &lt;UIApplicationDelegate,UIPickerViewDataSource,UIPickerViewDelegate&gt;</div></pre></td></tr></table></figure></p>
+<p>接着就是在.m文件中去实现协议的方法，设定控件相对应的属性和绑定数据：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">//选择器显示数据时访问它，确定显示多少列</div><div class="line">-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView&#123;</div><div class="line">    //本选择器只显示1列</div><div class="line">    return 3;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>设置每个列里面显示多少行数据：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">//选择器显示数据时访问它，确定显示每个列显示多少行</div><div class="line">-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component&#123;</div><div class="line">    if (component==0) &#123;</div><div class="line">        return [self.province count];</div><div class="line">    &#125;</div><div class="line">    if (component==1) &#123;</div><div class="line">        return [self.city count];</div><div class="line">    &#125;</div><div class="line">    else&#123;</div><div class="line">        return [self.area count];</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>初始化数据：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">self.province=[NSArray arrayWithObjects:@&quot;四川&quot;,@&quot;湖北&quot;,@&quot;浙江&quot;,@&quot;上海&quot;, nil];</div><div class="line">self.city=[NSArray arrayWithObjects:@&quot;成都&quot;,@&quot;武汉&quot;,@&quot;杭州&quot;,@&quot;上海&quot;, nil];</div><div class="line">self.area=[NSArray arrayWithObjects:@&quot;锦江区&quot;,@&quot;高新区&quot;,@&quot;江夏区&quot;,@&quot;青山区&quot;,@&quot;萧山区&quot;,@&quot;金山区&quot;, nil];</div></pre></td></tr></table></figure></p>
+<p>给控件绑定数据：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">//设置选择器显示的数据</div><div class="line">-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component&#123;</div><div class="line">    switch (component) &#123;</div><div class="line">        case 0:</div><div class="line">            return self.province[row];</div><div class="line">            break;</div><div class="line">        case 1:</div><div class="line">            return self.city[row];</div><div class="line">            break;</div><div class="line">        default:</div><div class="line">            return self.area[row];</div><div class="line">            break;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>设置选择器上文字颜色，对齐方式等相关属性：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">//设置选择器上的数据，设置文字相关属性</div><div class="line">-(UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view&#123;</div><div class="line">    UILabel *lbl=[[UILabel alloc]init];</div><div class="line">    //设置文字颜色</div><div class="line">    lbl.textColor=[UIColor whiteColor];</div><div class="line">    //设置文字居中</div><div class="line">    lbl.textAlignment=NSTextAlignmentCenter;</div><div class="line">    switch (component) &#123;</div><div class="line">        case 0:</div><div class="line">            lbl.text=self.province[row];</div><div class="line">            break;</div><div class="line">            case 1:</div><div class="line">            lbl.text=self.city[row];</div><div class="line">            break;</div><div class="line">        default:</div><div class="line">            </div><div class="line">            lbl.text=self.area[row];</div><div class="line">            break;</div><div class="line">    &#125;</div><div class="line">    return lbl;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>当用户选择了数据，我们就需要在后台获取用户选择的数据，那么就会调用如下方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">//获取选择行和列的值</div><div class="line">-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component&#123;</div><div class="line">    NSLog(@&quot;行：%ld,列:%ld&quot;,row,component);</div><div class="line">    switch (component) &#123;</div><div class="line">        case 0:</div><div class="line">            NSLog(@&quot;%@&quot;,self.province[row]);</div><div class="line">            break;</div><div class="line">        case 1:</div><div class="line">            NSLog(@&quot;%@&quot;,self.city[row]);</div><div class="line">            break;</div><div class="line">        default:</div><div class="line">            NSLog(@&quot;%@&quot;,self.area[row]);</div><div class="line">            break;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>一个完整的选择器控件就是这么展现出来了</p>
+<p>iOS学习路上的一点心得，望共勉。</p>
 
       
     </div>
@@ -350,13 +345,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/08/21/谈谈时间管理和高效工作法/">谈谈时间管理和高效工作法</a></p>
+        <p><span>本文标题:</span><a href="/2016/08/22/iOS学习之UIPickerView控件/">iOS学习之UIPickerView控件</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">罗朝福</a></p>
-        <p><span>发布时间:</span>2016-08-21, 18:59:20</p>
-        <p><span>最后更新:</span>2016-08-22, 13:59:24</p>
+        <p><span>发布时间:</span>2016-08-22, 22:46:21</p>
+        <p><span>最后更新:</span>2016-08-22, 23:20:44</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/08/21/谈谈时间管理和高效工作法/" title="谈谈时间管理和高效工作法">http://blog.lzhaofu.cn/2016/08/21/谈谈时间管理和高效工作法/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://blog.lzhaofu.cn/2016/08/21/谈谈时间管理和高效工作法/　　作者: 罗朝福" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/08/22/iOS学习之UIPickerView控件/" title="iOS学习之UIPickerView控件">http://blog.lzhaofu.cn/2016/08/22/iOS学习之UIPickerView控件/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://blog.lzhaofu.cn/2016/08/22/iOS学习之UIPickerView控件/　　作者: 罗朝福" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -368,16 +363,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/08/22/iOS学习之UIPickerView控件/">
-                    iOS学习之UIPickerView控件
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/08/19/局域网中如何使mac和win对传文件/">
-                    局域网中如何使mac和win对传文件?
+                <a href="/2016/08/21/谈谈时间管理和高效工作法/">
+                    谈谈时间管理和高效工作法
                 </a>
             </div>
         
@@ -416,7 +405,7 @@
     
       <div class="duoshuo" id="comments">
     <div id="comment-box" ></div>
-    <div class="ds-thread" id="ds-thread" data-thread-key="2016/08/21/谈谈时间管理和高效工作法/" data-title="谈谈时间管理和高效工作法" data-url="http://blog.lzhaofu.cn/2016/08/21/谈谈时间管理和高效工作法/"></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2016/08/22/iOS学习之UIPickerView控件/" data-title="iOS学习之UIPickerView控件" data-url="http://blog.lzhaofu.cn/2016/08/22/iOS学习之UIPickerView控件/"></div>
     <script>
         var duoshuoQuery = {short_name:"lzhaofu"};
         var loadComment = function(){
@@ -439,15 +428,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/08/22/iOS学习之UIPickerView控件/" title="上一篇: iOS学习之UIPickerView控件">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/08/19/局域网中如何使mac和win对传文件/" title="下一篇: 局域网中如何使mac和win对传文件?">
+            <a href="/2016/08/21/谈谈时间管理和高效工作法/" title="下一篇: 谈谈时间管理和高效工作法">
                 <i class="fa fa-angle-right"></i>
             </a>
         
