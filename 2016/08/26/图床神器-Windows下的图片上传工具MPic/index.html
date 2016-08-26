@@ -15,15 +15,22 @@
 
 
 
-<meta name="description" content="学习总结，思考感悟，知识管理，iOS学习，.NET学习，程序开发，个人心得">
-<meta property="og:type" content="website">
-<meta property="og:title" content="罗朝福的博客">
-<meta property="og:url" content="http://blog.lzhaofu.cn/archives/2016/index.html">
+<meta name="description" content="最近用hexo在github上搭建了一个静态博客，开始几天用起来感觉还挺好的，但是用了些天就觉得每次写文章插入图片就非常麻烦，而且如果图片多了的话上传和访问就很慢了。后来网上看了下发现mac下有款ipic的软件很方便，直接复制图片就能做到自动上传到云上。不过这软件只有收费用户才能使用七牛、有拍等云存储，免费用户上传的图片只能保存在公共的微博图床。
+但有时候写文章是在window下的，虽然也有些网站">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[图床神器]Windows下的图片上传工具MPic">
+<meta property="og:url" content="http://blog.lzhaofu.cn/2016/08/26/图床神器-Windows下的图片上传工具MPic/index.html">
 <meta property="og:site_name" content="罗朝福的博客">
-<meta property="og:description" content="学习总结，思考感悟，知识管理，iOS学习，.NET学习，程序开发，个人心得">
+<meta property="og:description" content="最近用hexo在github上搭建了一个静态博客，开始几天用起来感觉还挺好的，但是用了些天就觉得每次写文章插入图片就非常麻烦，而且如果图片多了的话上传和访问就很慢了。后来网上看了下发现mac下有款ipic的软件很方便，直接复制图片就能做到自动上传到云上。不过这软件只有收费用户才能使用七牛、有拍等云存储，免费用户上传的图片只能保存在公共的微博图床。
+但有时候写文章是在window下的，虽然也有些网站">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2154466-648a805ee764680d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2154466-3244eced505e26de.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2016-08-26T00:51:26.539Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="罗朝福的博客">
-<meta name="twitter:description" content="学习总结，思考感悟，知识管理，iOS学习，.NET学习，程序开发，个人心得">
+<meta name="twitter:title" content="[图床神器]Windows下的图片上传工具MPic">
+<meta name="twitter:description" content="最近用hexo在github上搭建了一个静态博客，开始几天用起来感觉还挺好的，但是用了些天就觉得每次写文章插入图片就非常麻烦，而且如果图片多了的话上传和访问就很慢了。后来网上看了下发现mac下有款ipic的软件很方便，直接复制图片就能做到自动上传到云上。不过这软件只有收费用户才能使用七牛、有拍等云存储，免费用户上传的图片只能保存在公共的微博图床。
+但有时候写文章是在window下的，虽然也有些网站">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/2154466-648a805ee764680d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -55,7 +62,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Archives: 2016 | 罗朝福的博客</title>
+<title>[图床神器]Windows下的图片上传工具MPic | 罗朝福的博客</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -65,8 +72,8 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
-        isArchive: true,
+        isPost: true,
+        isArchive: false,
         isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
@@ -271,208 +278,164 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-图床神器-Windows下的图片上传工具MPic" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/08/26/图床神器-Windows下的图片上传工具MPic/" class="archive-article-date">
-      <time datetime="2016-08-26T00:45:01.000Z" itemprop="datePublished">08-26</time>
+    <div class="article-meta">
+      <a href="/2016/08/26/图床神器-Windows下的图片上传工具MPic/" class="article-date">
+      <time datetime="2016-08-26T00:45:01.000Z" itemprop="datePublished">2016-08-26</time>
 </a>
 
 
-        </div>
-         
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/26/图床神器-Windows下的图片上传工具MPic/">[图床神器]Windows下的图片上传工具MPic</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      [图床神器]Windows下的图片上传工具MPic
     </h1>
   
 
-        <div class="article-info info-on-archive">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
     <div class="article-category tagcloud">
     <a class="article-category-link" href="/categories/学习笔记/">学习笔记</a>
     </div>
 
 
-          
+        
     <div class="article-tag tagcloud">
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/c/">c#</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具/">工具</a></li></ul>
     </div>
 
-        </div>
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>最近用hexo在github上搭建了一个静态<a href="http://blog.lzhaofu.cn/">博客</a>，开始几天用起来感觉还挺好的，但是用了些天就觉得每次写文章插入图片就非常麻烦，而且如果图片多了的话上传和访问就很慢了。<br>后来网上看了下发现mac下有款ipic的软件很方便，直接复制图片就能做到自动上传到云上。不过这软件只有收费用户才能使用七牛、有拍等云存储，免费用户上传的图片只能保存在公共的微博图床。</p>
+<p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/2154466-648a805ee764680d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="iPic"><br></div><br>但有时候写文章是在window下的，虽然也有些网站也做了类似的功能，但是每次都要去打开浏览器上传拖曳也挺麻烦，所有干脆就自己用c#写了个我winform的拖曳上传软件。<br><a id="more"></a></p>
+<p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/2154466-3244eced505e26de.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="MPic"><br></div><br>图片上传之后，会自动将上传到七牛的图片地址加工厂Markdown格式的链接复制到粘贴板，我们只需要在文章里面直接进行粘贴就可以了。虽然界面有些简陋，但是对于我们经常写博客的朋友来说，确实是实用。<br>下面附上GitHub源码链接，有兴趣的朋友可以继续改进一下。<br><a href="https://github.com/luozhaofu/MPic.git" target="_blank" rel="external">ForkMe</a></p>
+
+      
+    </div>
+    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/08/26/图床神器-Windows下的图片上传工具MPic/">[图床神器]Windows下的图片上传工具MPic</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">罗朝福</a></p>
+        <p><span>发布时间:</span>2016-08-26, 08:45:01</p>
+        <p><span>最后更新:</span>2016-08-26, 08:51:26</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/08/26/图床神器-Windows下的图片上传工具MPic/" title="[图床神器]Windows下的图片上传工具MPic">http://blog.lzhaofu.cn/2016/08/26/图床神器-Windows下的图片上传工具MPic/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://blog.lzhaofu.cn/2016/08/26/图床神器-Windows下的图片上传工具MPic/　　作者: 罗朝福" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/08/22/iOS学习之UIPickerView控件/">
+                    iOS学习之UIPickerView控件
+                </a>
+            </div>
+        
+    </nav>
+
+  
 </article>
-  
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+
+
     
+      <div class="duoshuo" id="comments">
+    <div id="comment-box" ></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2016/08/26/图床神器-Windows下的图片上传工具MPic/" data-title="[图床神器]Windows下的图片上传工具MPic" data-url="http://blog.lzhaofu.cn/2016/08/26/图床神器-Windows下的图片上传工具MPic/"></div>
+    <script>
+        var duoshuoQuery = {short_name:"lzhaofu"};
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            s.async = true; s.charset = 'UTF-8';
+            (d.head || d.body).appendChild(s);
+        }
+
+        
+    </script>
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/08/22/iOS学习之UIPickerView控件/" class="archive-article-date">
-      <time datetime="2016-08-22T14:46:21.000Z" itemprop="datePublished">08-22</time>
-</a>
+    <script> loadComment(); </script>
+
+</div>
+    
 
 
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/22/iOS学习之UIPickerView控件/">iOS学习之UIPickerView控件</a>
-    </h1>
-  
 
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/学习笔记/">学习笔记</a>
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/08/22/iOS学习之UIPickerView控件/" title="下一篇: iOS学习之UIPickerView控件">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
     </div>
 
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发/">开发</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/控件/">控件</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/08/21/谈谈时间管理和高效工作法/" class="archive-article-date">
-      <time datetime="2016-08-21T10:59:20.000Z" itemprop="datePublished">08-21</time>
-</a>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/08/26/图床神器-Windows下的图片上传工具MPic/">[图床神器]Windows下的图片上传工具MPic</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/iOS学习之UIPickerView控件/">iOS学习之UIPickerView控件</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/21/谈谈时间管理和高效工作法/">谈谈时间管理和高效工作法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/19/局域网中如何使mac和win对传文件/">局域网中如何使mac和win对传文件?</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/19/iOS学习之UIDatePicker控件/">iOS学习之UIDatePicker控件</a></li></ul>
 
 
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/21/谈谈时间管理和高效工作法/">谈谈时间管理和高效工作法</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/学习心得/">学习心得</a>
-    </div>
 
 
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/时间管理/">时间管理</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/08/19/局域网中如何使mac和win对传文件/" class="archive-article-date">
-      <time datetime="2016-08-19T14:29:08.000Z" itemprop="datePublished">08-19</time>
-</a>
-
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/19/局域网中如何使mac和win对传文件/">局域网中如何使mac和win对传文件?</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/学习笔记/">学习笔记</a>
-    </div>
-
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mac/">mac</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/08/19/iOS学习之UIDatePicker控件/" class="archive-article-date">
-      <time datetime="2016-08-19T07:57:52.000Z" itemprop="datePublished">08-19</time>
-</a>
-
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/19/iOS学习之UIDatePicker控件/">iOS学习之UIDatePicker控件</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/学习笔记/">学习笔记</a>
-    </div>
-
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发/">开发</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/控件/">控件</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
